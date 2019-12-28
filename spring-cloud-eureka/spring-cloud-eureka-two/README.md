@@ -28,6 +28,11 @@ java -jar spring-cloud-eureka-cluster-0.0.1-SNAPSHOT.jar --spring.profiles.activ
 java -jar spring-cloud-eureka-cluster-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer2
 ```
 
+- 参考文档
+    1. https://windmt.com/2018/04/15/spring-cloud-2-eureka/
+    2. http://www.ityouknow.com/springcloud/2017/05/10/springcloud-eureka.html
+   
+
 
 
 
