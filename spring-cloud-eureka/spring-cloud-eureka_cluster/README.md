@@ -11,8 +11,8 @@
 - 2、分别启动test目录下两个启动类也可以
 
 ```$xslt
-     com.xuyy.SpringCloudEurekaApplicationPeer1
-     com.xuyy.SpringCloudEurekaApplicationPeer2
+     com.xuyy.SpringCloudConsumerApplicationPeer1
+     com.xuyy.SpringCloudProducerApplicationPeer2
 ```
    
     
