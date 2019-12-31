@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.xuyy</groupId>
-    <artifactId>spring-cloud-producer</artifactId>
+    <artifactId>spring-cloud-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>spring-cloud-producer</name>
+    <name>spring-cloud-hystrix-consumer</name>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -31,6 +31,11 @@
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
@@ -39,6 +44,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <dependencyManagement>
