@@ -1,10 +1,18 @@
-spring:
-      application:
-        name: eureka-one
 server:
   port: 8000
 
+#===========spring security config start =============
+USER: admin
+PASSWORD: 123456
 
+spring:
+    application:
+        name: eureka-one
+    security:
+      user:
+        name: ${USER}
+        password: ${PASSWORD}
+#===========spring security config end =============
 #===========eureka config start =============
 eureka:
   instance:
@@ -16,15 +24,12 @@ eureka:
     fetch-registry: false
     #设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。
     # 默认是http://localhost:8761/eureka ；多个地址可使用 , 分隔。
-    serviceUrl:
+    service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 #===========eureka config end  =============
 
-spring:
-  freemarker:
-    template-loader-path: classpath:/templates/
-    prefer-file-system-access: false
+
 
 
 
