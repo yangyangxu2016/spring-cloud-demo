@@ -1,0 +1,45 @@
+spring:
+      profiles: peer1
+      application:
+        name: spring-cloud-producer
+server:
+  port: 8100
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8000/eureka/
+    server:
+        waitTimeInMsWhenSyncEmpty: 0
+
+
+
+---
+
+
+spring:
+      profiles: peer2
+      application:
+        name: spring-cloud-producer
+server:
+  port: 8200
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8000/eureka/
+    server:
+        waitTimeInMsWhenSyncEmpty: 0
+
+
+
